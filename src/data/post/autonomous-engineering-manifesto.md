@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-02-09T00:00:00Z
+publishDate: 2026-02-18T00:00:00Z
 author: Mayank Bhasin
 title: The Autonomous Engineering Manifesto - The Age of the Orchestrator
 excerpt: A comprehensive framework for building production software with Multi-Agent Systems. How humans evolve from implementers to orchestrators, and why specification-driven development is the future of software engineering.

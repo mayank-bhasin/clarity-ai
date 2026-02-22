@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-02-09T00:00:00Z
+publishDate: 2026-02-22T00:00:00Z
 author: Mayank Bhasin
 title: 5 Ways AI Changes Product Discovery (And How to Adapt)
 excerpt: Product discovery used to take weeks. AI can compress it to days—but only if you adapt your process. Here's what changed in my work at Microsoft and how you can apply it.

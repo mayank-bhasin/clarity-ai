@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-02-09T00:00:00Z
+publishDate: 2026-02-15T00:00:00Z
 author: Mayank Bhasin
 title: AI Tech Stack Guide for Knowledge Workers | 2026
 excerpt: A comprehensive framework for Product Managers, Developers, Designers, and Analysts navigating the AI revolution. Learn which AI tools to use, when to use them, and how to build AI competency in 12 weeks.

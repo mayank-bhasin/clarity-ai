@@ -1,5 +1,5 @@
 ---
-publishDate: 2026-02-09T00:00:00Z
+publishDate: 2026-02-20T00:00:00Z
 author: Mayank Bhasin
 title: Why Product Managers Need AI Foundations Before Tools
 excerpt: Most PMs are rushing to learn ChatGPT and Copilot. But without understanding AI fundamentals, you're just another user—not a strategic product leader. Here's why foundations matter more than tools.
