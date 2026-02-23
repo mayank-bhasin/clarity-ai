@@ -23,7 +23,14 @@ export const headerData = {
       href: getPermalink('/contact'),
     },
   ],
-  actions: [],
+  actions: [
+    {
+      text: 'Book a Call',
+      href: 'https://calendly.com/mayankbhasin007/new-meeting',
+      target: '_blank',
+      variant: 'primary',
+    },
+  ],
 };
 
 export const footerData = {

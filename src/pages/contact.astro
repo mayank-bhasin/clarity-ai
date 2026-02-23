@@ -26,6 +26,11 @@ const metadata = {
     columns={2}
     items={[
       {
+        title: 'Book a Call',
+        description: 'Schedule a 30-minute discovery call to discuss AI strategy, coaching, or collaboration opportunities.',
+        icon: 'tabler:calendar-event',
+      },
+      {
         title: 'LinkedIn',
         description: 'Connect with me on LinkedIn for professional networking and collaboration opportunities.',
         icon: 'tabler:brand-linkedin',
@@ -40,11 +45,6 @@ const metadata = {
         description: 'Check out my projects and code repositories.',
         icon: 'tabler:brand-github',
       },
-      {
-        title: 'Articles & Insights',
-        description: 'Read my latest thoughts on AI, automation, and product management.',
-        icon: 'tabler:article',
-      },
     ]}
   />
 
@@ -54,16 +54,16 @@ const metadata = {
     title="Quick Links"
     items={[
       {
+        title: 'Schedule a Call',
+        description: 'https://calendly.com/mayankbhasin007/new-meeting',
+      },
+      {
         title: 'LinkedIn Profile',
         description: 'https://www.linkedin.com/in/mayank-bhasin-00a46b51/',
       },
       {
         title: 'GitHub',
         description: 'https://github.com/mayank-bhasin',
-      },
-      {
-        title: 'Email',
-        description: 'Available on request via LinkedIn',
       },
     ]}
     image={{
@@ -87,6 +87,26 @@ const metadata = {
       </ul>
     </Fragment>
   </Content>
+
+  <!-- Call to Action Section -->
+
+  <section class="bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-800 dark:to-slate-900 py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-white mb-4">Ready to Get Started?</h2>
+      <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+        Book a free 30-minute discovery call to discuss how AI can transform your product strategy, team capabilities, or business operations.
+      </p>
+      <a
+        href="https://calendly.com/mayankbhasin007/new-meeting"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-3 px-8 py-4 bg-white text-blue-700 text-lg font-semibold rounded-lg hover:bg-blue-50 transition-colors shadow-lg"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        Schedule Your Discovery Call
+      </a>
+    </div>
+  </section>
 
   <!-- Social Links Section -->
 
