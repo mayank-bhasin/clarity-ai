@@ -18,13 +18,21 @@ const metadata = {
     tagline="About"
   >
     <Fragment slot="title">
+      <div class="flex justify-center mb-4">
+        <img
+          src="/images/mayank-bhasin-profile.jpg"
+          alt="Mayank Bhasin"
+          class="w-32 h-32 rounded-full object-cover border-4 border-blue-500 shadow-lg"
+          loading="eager"
+        />
+      </div>
       Mayank Bhasin
       <span class="block text-2xl mt-2 text-accent">Founder, Clarity AI</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="text-lg">
-        Principal PM at Microsoft | 21+ Years Building AI-First Solutions for Product Leaders
+        AI-First Product & Program Executive | Principal PM at Microsoft | GenAI, Agentic AI & Enterprise Transformation
       </span>
     </Fragment>
   </Hero>
@@ -37,7 +45,7 @@ const metadata = {
       { title: 'Years of Experience', amount: '21+' },
       { title: 'Markets Served', amount: 'Global' },
       { title: 'Focus', amount: 'AI-First' },
-      { title: 'Active Mentor', amount: '4 Programs' },
+      { title: 'Active Mentor', amount: '6 Programs' },
     ]}
   />
 
@@ -72,13 +80,13 @@ const metadata = {
         Who I Am
       </h2>
       <p class="text-muted mb-4">
-        I'm a global product and innovation leader with 21+ years of experience building transformative technology solutions across AI, cloud, and digital platforms.
+        I'm an AI-focused Product & Program Leader with 21+ years of global experience at the intersection of Artificial Intelligence, Cloud platforms, and enterprise transformation.
       </p>
       <p class="text-muted mb-4">
-        At <strong>Microsoft</strong>, I am part of Windows Engineering helping enterprise customers across the UK, EMEA, and the US drive adoption of AI-powered management solutions—delivering secure, intelligent, and scalable commercial experiences.
+        At <strong>Microsoft</strong>, I build and deploy <strong>agentic AI solutions</strong> — intelligent agents powered by LLMs, Semantic Kernel, and Azure AI that automate customer insight capture, engineering workflows, and decision-making. I led <strong>Copilot+ PC commercial readiness</strong> across 200M+ devices and drive enterprise AI adoption through hands-on workshops and GenAI PoCs.
       </p>
       <p class="text-muted">
-        My passion lies in solving complex problems through AI-driven product strategy, cloud transformation, and user-centric innovation.
+        I'm passionate about applying AI to product management — from AI-powered roadmap prioritization to agentic workflows that transform how products are built and delivered.
       </p>
     </Fragment>
   </Content>
@@ -172,32 +180,44 @@ const metadata = {
 
   <Features3
     title="Mentorship & Community Impact"
-    subtitle="Committed to developing the next generation of leaders"
-    columns={2}
+    subtitle="Committed to developing the next generation of AI and product leaders"
+    columns={3}
     items={[
       {
-        title: 'Lead Instructor at BrainStation',
+        title: 'Lead Instructor — BrainStation',
         description:
-          'Teaching Product Leadership to aspiring product managers, helping them develop strategic thinking and execution skills.',
+          'Teaching Product Leadership to aspiring product managers, helping them develop strategic thinking and AI-first execution skills.',
         icon: 'tabler:school',
       },
       {
-        title: 'Mentor at Femme Palette',
+        title: 'Mentor — Pi515',
         description:
-          'Supporting women in tech through mentorship, guidance, and career development.',
-        icon: 'tabler:heart-handshake',
-      },
-      {
-        title: 'Volunteer Mentor for ITSB',
-        description:
-          'Supporting young learners in their educational journey and career exploration.',
+          'Mentoring underrepresented professionals in technology, leadership development, and career advancement in AI and product roles.',
         icon: 'tabler:users-group',
       },
       {
-        title: 'Global Mentorship Initiative',
+        title: 'Mentor — Migrant Leaders',
         description:
-          'Mentoring young adults globally, helping them navigate career decisions and professional growth.',
+          'Supporting migrant professionals in building leadership skills, navigating career transitions, and accessing opportunities in the UK tech industry.',
         icon: 'tabler:world',
+      },
+      {
+        title: 'Mentor — Female Palette',
+        description:
+          'Supporting women in tech through mentorship, career guidance, and leadership development.',
+        icon: 'tabler:heart-handshake',
+      },
+      {
+        title: 'Volunteer Mentor — ITSB',
+        description:
+          'Guiding at-risk children in digital literacy, problem-solving, and STEM career pathways.',
+        icon: 'tabler:heart',
+      },
+      {
+        title: 'AI & PM Career Mentoring',
+        description:
+          'Mentoring students, early-career professionals, and experienced leaders pivoting into AI, product management, and agentic AI roles.',
+        icon: 'tabler:rocket',
       },
     ]}
   >
@@ -214,28 +234,38 @@ const metadata = {
     columns={3}
     items={[
       {
-        title: 'MS AI Transformation Leader',
-        description: 'Microsoft AI transformation leadership certification',
+        title: 'Microsoft 365: Copilot & Agent Admin',
+        description: 'Copilot and Agent Administration Fundamentals (2026)',
         icon: 'tabler:certificate-2',
       },
       {
-        title: 'Azure AI Fundamentals',
-        description: 'Microsoft Azure AI expertise',
+        title: 'MS AI Business Professional',
+        description: 'Microsoft Certified: AI Business Professional (2026)',
+        icon: 'tabler:certificate-2',
+      },
+      {
+        title: 'MS AI Transformation Leader',
+        description: 'Microsoft Certified: AI Transformation Leader (2026)',
+        icon: 'tabler:certificate-2',
+      },
+      {
+        title: 'Azure AI Fundamentals (AI-900)',
+        description: 'Microsoft Azure AI expertise (2023)',
         icon: 'tabler:certificate',
       },
       {
-        title: 'Azure Cloud Fundamentals',
-        description: 'Microsoft Azure cloud platform',
+        title: 'Azure Cloud (AZ-900)',
+        description: 'Microsoft Azure cloud platform (2022)',
+        icon: 'tabler:certificate',
+      },
+      {
+        title: 'Oracle Cloud Infrastructure',
+        description: 'Cloud architecture & security on OCI (2021)',
         icon: 'tabler:certificate',
       },
       {
         title: 'AWS Cloud',
-        description: 'Amazon Web Services certified',
-        icon: 'tabler:certificate',
-      },
-      {
-        title: 'Oracle Cloud',
-        description: 'Oracle Cloud Infrastructure',
+        description: 'Cloud architecture & deployment on AWS (2019)',
         icon: 'tabler:certificate',
       },
       {
@@ -245,7 +275,7 @@ const metadata = {
       },
       {
         title: 'DevOps & Agile',
-        description: 'Modern software practices',
+        description: 'DASA, KnowIT, DevOpsGuys (2017)',
         icon: 'tabler:certificate',
       },
     ]}

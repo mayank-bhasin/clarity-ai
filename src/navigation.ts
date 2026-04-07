@@ -11,6 +11,10 @@ export const headerData = {
       href: getPermalink('/about'),
     },
     {
+      text: 'Mentoring',
+      href: getPermalink('/mentoring'),
+    },
+    {
       text: 'Portfolio',
       href: getPermalink('/portfolio'),
     },
@@ -40,6 +44,7 @@ export const footerData = {
       links: [
         { text: 'Home', href: getPermalink('/') },
         { text: 'About', href: getPermalink('/about') },
+        { text: 'Mentoring', href: getPermalink('/mentoring') },
         { text: 'Portfolio', href: getPermalink('/portfolio') },
         { text: 'Blog', href: getBlogPermalink() },
         { text: 'Contact', href: getPermalink('/contact') },
@@ -66,7 +71,7 @@ export const footerData = {
     {
       title: 'Connect',
       links: [
-        { text: 'LinkedIn', href: 'https://www.linkedin.com/in/mayank-bhasin-00a46b51/' },
+        { text: 'LinkedIn', href: 'https://www.linkedin.com/in/mayankbhasin/' },
         { text: 'GitHub', href: 'https://github.com/mayank-bhasin' },
         { text: 'Contact Me', href: getPermalink('/contact') },
       ],
@@ -74,7 +79,7 @@ export const footerData = {
   ],
   secondaryLinks: [],
   socialLinks: [
-    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/mayank-bhasin-00a46b51/' },
+    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/mayankbhasin/' },
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/mayank-bhasin' },
   ],
   footNote: `

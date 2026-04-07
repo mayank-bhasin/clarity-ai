@@ -1,0 +1,359 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Pricing from '~/components/widgets/Pricing.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Stats from '~/components/widgets/Stats.astro';
+
+const metadata = {
+  title: 'Mentoring — Clarity AI',
+  description: 'AI and Product Management mentoring for students, early-career professionals, and experienced leaders pivoting into AI roles.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero -->
+  <Hero tagline="Mentoring">
+    <Fragment slot="title">
+      <div class="flex justify-center mb-4">
+        <img
+          src="/images/mayank-bhasin-profile.jpg"
+          alt="Mayank Bhasin"
+          class="w-28 h-28 rounded-full object-cover border-4 border-blue-500 shadow-lg"
+          loading="eager"
+        />
+      </div>
+      Your AI & Product Management
+      <span class="text-accent"> Mentor</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="text-lg">
+        Whether you're a student exploring AI, an early-career PM building your foundation, or an experienced leader pivoting into AI — I'll help you navigate the path with clarity and confidence.
+      </span>
+    </Fragment>
+  </Hero>
+
+  <!-- Stats -->
+  <Stats
+    stats={[
+      { title: 'Years of Experience', amount: '21+' },
+      { title: 'Mentoring Programs', amount: '6' },
+      { title: 'Industries', amount: 'Tech, Telecom, Cloud' },
+      { title: 'Companies', amount: 'Microsoft, Nokia, Oracle' },
+    ]}
+  />
+
+  <!-- Who Is This For -->
+  <Features
+    id="who"
+    tagline="Who Is This For"
+    title="Mentoring for Every Stage of Your AI & PM Journey"
+    subtitle="I work with people at different career stages, each with unique needs and goals."
+    items={[
+      {
+        title: 'Students & Graduates',
+        description:
+          'Exploring careers in AI, product management, or tech. Get clarity on career paths, build the right skills, and prepare for your first role in AI or PM.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Early-Career Professionals (0–5 years)',
+        description:
+          'Building your PM or AI foundations. Develop strategic thinking, learn AI tools hands-on, understand agentic AI, and accelerate your career growth.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Experienced Leaders Pivoting to AI',
+        description:
+          'Moving into AI product management, GenAI strategy, or agentic AI roles. Leverage your existing experience and reposition for AI-first leadership roles.',
+        icon: 'tabler:arrows-exchange',
+      },
+      {
+        title: 'Career Changers & Migrants',
+        description:
+          'Navigating the UK tech industry from a different background or country. Build your network, understand the landscape, and land your target role.',
+        icon: 'tabler:world',
+      },
+      {
+        title: 'Aspiring Product Managers',
+        description:
+          'Transitioning into product management from engineering, design, or business roles. Learn PM frameworks, build your portfolio, and ace interviews.',
+        icon: 'tabler:target',
+      },
+      {
+        title: 'Women in Tech',
+        description:
+          'Breaking barriers and building leadership careers. Get support on navigating growth, visibility, and leadership development in tech.',
+        icon: 'tabler:heart-handshake',
+      },
+    ]}
+  />
+
+  <!-- How It Works -->
+  <Steps
+    title="How Mentoring Works"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Book a Free Discovery Call</span>',
+        description:
+          'We start with a free 15-minute call to understand your goals, challenges, and where you are in your career journey. No commitment required.',
+        icon: 'tabler:phone',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Choose Your Package</span>',
+        description:
+          'Select the mentoring package that fits your needs — from single sessions for quick guidance to ongoing monthly mentoring for deeper transformation.',
+        icon: 'tabler:clipboard-list',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Personalised Mentoring Sessions</span>',
+        description:
+          'Each session is tailored to you. We work on your specific challenges — career strategy, AI skills, interview prep, product thinking, or leadership development.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Step 4: <span class="font-medium">Actionable Outcomes</span>',
+        description:
+          'You leave every session with clear action items, resources, and a plan. I follow up to ensure you are making progress toward your goals.',
+        icon: 'tabler:check',
+      },
+    ]}
+  />
+
+  <!-- Pricing -->
+  <Pricing
+    title="Mentoring Packages"
+    subtitle="Flexible options for every stage of your journey"
+    tagline="Pricing"
+    prices={[
+      {
+        title: 'Discovery Call',
+        subtitle: 'Get started — no commitment',
+        price: 'Free',
+        period: '15 minutes',
+        items: [
+          { description: '15-minute video call' },
+          { description: 'Discuss your goals & challenges' },
+          { description: 'Get initial career direction' },
+          { description: 'No obligation to continue' },
+        ],
+        callToAction: {
+          text: 'Book Free Call',
+          href: 'https://calendly.com/mayankbhasin007/new-meeting',
+          target: '_blank',
+        },
+      },
+      {
+        title: 'Single Session',
+        subtitle: 'Focused guidance on a specific topic',
+        price: 50,
+        period: '30 minutes',
+        items: [
+          { description: '30-minute 1:1 video session' },
+          { description: 'Career strategy or AI skills focus' },
+          { description: 'Actionable takeaways & resources' },
+          { description: 'Session notes shared after call' },
+        ],
+        callToAction: {
+          text: 'Book Session',
+          href: 'https://calendly.com/mayankbhasin007/new-meeting',
+          target: '_blank',
+        },
+      },
+      {
+        title: 'Deep Dive',
+        subtitle: 'Extended session for complex topics',
+        price: 90,
+        period: '60 minutes',
+        items: [
+          { description: '60-minute 1:1 video session' },
+          { description: 'Portfolio or CV review included' },
+          { description: 'Interview prep or career roadmap' },
+          { description: 'Follow-up email with action plan' },
+        ],
+        callToAction: {
+          text: 'Book Deep Dive',
+          href: 'https://calendly.com/mayankbhasin007/new-meeting',
+          target: '_blank',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'Popular',
+      },
+    ]}
+  />
+
+  <!-- Additional Package Info -->
+  <Pricing
+    title="Monthly Mentoring"
+    subtitle="For ongoing support and accountability"
+    prices={[
+      {
+        title: 'Starter',
+        subtitle: '2 sessions per month',
+        price: 150,
+        period: 'per month',
+        items: [
+          { description: '2x 30-minute sessions per month' },
+          { description: 'Email support between sessions' },
+          { description: 'Resource recommendations' },
+          { description: 'Progress tracking' },
+        ],
+        callToAction: {
+          text: 'Get Started',
+          href: 'https://calendly.com/mayankbhasin007/new-meeting',
+          target: '_blank',
+        },
+      },
+      {
+        title: 'Growth',
+        subtitle: '4 sessions per month',
+        price: 275,
+        period: 'per month',
+        items: [
+          { description: '4x 30-minute sessions per month' },
+          { description: 'Priority email & chat support' },
+          { description: 'CV/portfolio review included' },
+          { description: 'LinkedIn profile optimisation' },
+          { description: 'Mock interview practice' },
+        ],
+        callToAction: {
+          text: 'Start Growing',
+          href: 'https://calendly.com/mayankbhasin007/new-meeting',
+          target: '_blank',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'Best Value',
+      },
+      {
+        title: 'Executive',
+        subtitle: 'For senior leaders pivoting to AI',
+        price: 450,
+        period: 'per month',
+        items: [
+          { description: '4x 60-minute sessions per month' },
+          { description: 'Unlimited email & chat support' },
+          { description: 'AI career transition roadmap' },
+          { description: 'Executive positioning strategy' },
+          { description: 'Network introductions' },
+          { description: 'Personal brand coaching' },
+        ],
+        callToAction: {
+          text: 'Go Executive',
+          href: 'https://calendly.com/mayankbhasin007/new-meeting',
+          target: '_blank',
+        },
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Pricing>
+
+  <!-- What You'll Get -->
+  <Features3
+    title="What My Mentees Get"
+    subtitle="Every engagement is tailored, but these are the core areas I cover"
+    columns={3}
+    items={[
+      {
+        title: 'AI & Agentic AI Skills',
+        description: 'Hands-on guidance on LLMs, prompt engineering, RAG, AI agents, Copilot, and how to apply AI in product roles.',
+        icon: 'tabler:brain',
+      },
+      {
+        title: 'Product Management Frameworks',
+        description: 'Roadmapping, stakeholder management, OKRs, go-to-market strategy, and PM interview prep.',
+        icon: 'tabler:layout-dashboard',
+      },
+      {
+        title: 'Career Pivot Strategy',
+        description: 'A clear roadmap to transition into AI or PM roles — which skills to build, certs to get, and how to position yourself.',
+        icon: 'tabler:map',
+      },
+      {
+        title: 'CV & Portfolio Review',
+        description: 'ATS-optimised CV feedback, LinkedIn profile enhancement, and portfolio building guidance.',
+        icon: 'tabler:file-text',
+      },
+      {
+        title: 'Interview Preparation',
+        description: 'Mock interviews, case studies, and structured practice for PM, AI, and leadership roles.',
+        icon: 'tabler:message-circle',
+      },
+      {
+        title: 'Network & Visibility',
+        description: 'Guidance on building your professional brand, growing your network, and becoming visible in the AI community.',
+        icon: 'tabler:share',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-slate-800"></div>
+    </Fragment>
+  </Features3>
+
+  <!-- My Credentials -->
+  <Features3
+    title="My Mentoring Credentials"
+    subtitle="Active across multiple mentoring organisations"
+    columns={3}
+    items={[
+      {
+        title: 'BrainStation',
+        description: 'Lead Instructor for Product Leadership — training aspiring PMs in strategic thinking and real-world product management.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Pi515',
+        description: 'Mentoring underrepresented professionals in technology, leadership development, and career advancement.',
+        icon: 'tabler:users-group',
+      },
+      {
+        title: 'Migrant Leaders',
+        description: 'Supporting migrant professionals in building leadership skills and accessing opportunities in UK tech.',
+        icon: 'tabler:world',
+      },
+      {
+        title: 'Female Palette',
+        description: 'Supporting women in navigating career growth, leadership development, and industry transitions.',
+        icon: 'tabler:heart-handshake',
+      },
+      {
+        title: 'ITSB for Young Learners',
+        description: 'Guiding at-risk children in digital literacy, problem-solving, and STEM career pathways.',
+        icon: 'tabler:heart',
+      },
+      {
+        title: '21+ Years in Enterprise Tech',
+        description: 'Real-world experience at Microsoft, Oracle, and Nokia — not just theory, but battle-tested guidance.',
+        icon: 'tabler:briefcase',
+      },
+    ]}
+  />
+
+  <!-- CTA -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Book Your Free Discovery Call',
+        href: 'https://calendly.com/mayankbhasin007/new-meeting',
+        target: '_blank',
+        icon: 'tabler:calendar',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Ready to Accelerate Your Career?
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Start with a free 15-minute discovery call. No sales pitch — just an honest conversation about your goals and how I can help.
+    </Fragment>
+  </CallToAction>
+</Layout>
