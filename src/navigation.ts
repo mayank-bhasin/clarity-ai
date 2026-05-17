@@ -63,6 +63,7 @@ export const footerData = {
       title: 'Resources',
       links: [
         { text: 'AI Learning Playbook (Start Here)', href: getPermalink('/the-ai-learning-playbook') },
+        { text: 'How to Build AI Agents', href: getPermalink('/how-to-build-ai-agents') },
         { text: "PM's AI Toolkit", href: getPermalink('/pm-ai-toolkit') },
         { text: 'AI Tech Stack Guide', href: getPermalink('/ai-tech-stack-guide-knowledge-workers') },
         { text: 'All Articles', href: getBlogPermalink() },
