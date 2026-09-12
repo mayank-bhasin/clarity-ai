@@ -36,7 +36,7 @@ export const headerData = {
       text: 'Book a Call',
       href: 'https://calendly.com/mayankbhasin007/new-meeting',
       target: '_blank',
-      variant: 'primary',
+      variant: 'primary' as const,
     },
   ],
 };
@@ -82,7 +82,10 @@ export const footerData = {
       ],
     },
   ],
-  secondaryLinks: [],
+  secondaryLinks: [
+    { text: 'Terms', href: getPermalink('/terms') },
+    { text: 'Privacy', href: getPermalink('/privacy') },
+  ],
   socialLinks: [
     { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/mayankbhasin/' },
   ],

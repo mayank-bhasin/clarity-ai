@@ -10,7 +10,8 @@ import Stats from '~/components/widgets/Stats.astro';
 
 const metadata = {
   title: 'Mentoring — Clarity AI',
-  description: 'AI and Product Management mentoring for students, early-career professionals, and experienced leaders pivoting into AI roles.',
+  description:
+    'AI and Product Management mentoring for students, early-career professionals, and experienced leaders pivoting into AI roles.',
 };
 ---
 
@@ -32,10 +33,12 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="text-lg block mb-3">
-        A seasoned mentor active across paid expert platforms, training partners, and volunteer communities — supporting professionals at every stage of their AI and product careers.
+        A seasoned mentor active across paid expert platforms, training partners, and volunteer communities — supporting
+        professionals at every stage of their AI and product careers.
       </span>
       <span class="text-base text-muted">
-        Whether you're a student exploring AI, an early-career PM building your foundation, or an experienced leader pivoting into AI — I'll help you navigate the path with clarity and confidence.
+        Whether you're a student exploring AI, an early-career PM building your foundation, or an experienced leader
+        pivoting into AI — I'll help you navigate the path with clarity and confidence.
       </span>
     </Fragment>
   </Hero>
@@ -53,7 +56,9 @@ const metadata = {
   <!-- Community Recognition Badges -->
   <section class="px-4 py-16 mx-auto max-w-6xl">
     <div class="text-center mb-10">
-      <p class="text-base text-secondary dark:text-blue-200 font-semibold tracking-wide uppercase mb-2">Community Recognition</p>
+      <p class="text-base text-secondary dark:text-blue-200 font-semibold tracking-wide uppercase mb-2">
+        Community Recognition
+      </p>
       <h2 class="text-3xl md:text-4xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-white">
         Recognised by the <span class="text-accent">Global Mentoring Community</span>
       </h2>
@@ -64,7 +69,9 @@ const metadata = {
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <!-- Top 1% Mentor -->
-      <div class="relative border-2 border-amber-300 dark:border-amber-600 rounded-2xl p-7 bg-gradient-to-br from-amber-50 to-yellow-50 dark:from-amber-900/20 dark:to-yellow-900/10 shadow-md hover:shadow-lg transition text-center">
+      <div
+        class="relative border-2 border-amber-300 dark:border-amber-600 rounded-2xl p-7 bg-gradient-to-br from-amber-50 to-yellow-50 dark:from-amber-900/20 dark:to-yellow-900/10 shadow-md hover:shadow-lg transition text-center"
+      >
         <div class="text-5xl mb-3">🏆</div>
         <div class="text-xl font-bold text-amber-900 dark:text-amber-100 mb-1">Top 1% Mentor</div>
         <div class="text-sm text-amber-700 dark:text-amber-300 font-medium mb-2">April 2026</div>
@@ -72,7 +79,9 @@ const metadata = {
       </div>
 
       <!-- Top 10 Mentor -->
-      <div class="relative border-2 border-amber-300 dark:border-amber-600 rounded-2xl p-7 bg-gradient-to-br from-amber-50 to-yellow-50 dark:from-amber-900/20 dark:to-yellow-900/10 shadow-md hover:shadow-lg transition text-center">
+      <div
+        class="relative border-2 border-amber-300 dark:border-amber-600 rounded-2xl p-7 bg-gradient-to-br from-amber-50 to-yellow-50 dark:from-amber-900/20 dark:to-yellow-900/10 shadow-md hover:shadow-lg transition text-center"
+      >
         <div class="text-5xl mb-3">🥇</div>
         <div class="text-xl font-bold text-amber-900 dark:text-amber-100 mb-1">Top 10 Mentor</div>
         <div class="text-sm text-amber-700 dark:text-amber-300 font-medium mb-2">March 2026</div>
@@ -80,7 +89,9 @@ const metadata = {
       </div>
 
       <!-- Top 10 Fresh in AI/ML Engineering -->
-      <div class="relative border-2 border-amber-400 dark:border-amber-500 rounded-2xl p-7 bg-gradient-to-br from-yellow-50 to-amber-100 dark:from-amber-900/30 dark:to-yellow-900/20 shadow-md hover:shadow-lg transition text-center">
+      <div
+        class="relative border-2 border-amber-400 dark:border-amber-500 rounded-2xl p-7 bg-gradient-to-br from-yellow-50 to-amber-100 dark:from-amber-900/30 dark:to-yellow-900/20 shadow-md hover:shadow-lg transition text-center"
+      >
         <div class="text-5xl mb-3">🥇</div>
         <div class="text-xl font-bold text-amber-900 dark:text-amber-100 mb-1">Top 10 Fresh in AI/ML Engineering</div>
         <div class="text-sm text-amber-700 dark:text-amber-300 font-medium mb-2">Jan – Mar 2026</div>
@@ -190,7 +201,7 @@ const metadata = {
         },
       },
       {
-        title: 'Single Session',
+        title: 'Clarity Focus Session',
         subtitle: 'Focused guidance on a specific topic',
         price: 50,
         period: '30 minutes',
@@ -201,13 +212,13 @@ const metadata = {
           { description: 'Session notes shared after call' },
         ],
         callToAction: {
-          text: 'Book Session',
-          href: 'https://calendly.com/mayankbhasin007/new-meeting',
+          text: 'Buy Focus Session',
+          href: 'https://buy.stripe.com/5kQcN4dB0662dit1I52go01',
           target: '_blank',
         },
       },
       {
-        title: 'Deep Dive',
+        title: 'Clarity Deep-Dive',
         subtitle: 'Extended session for complex topics',
         price: 90,
         period: '60 minutes',
@@ -218,12 +229,40 @@ const metadata = {
           { description: 'Follow-up email with action plan' },
         ],
         callToAction: {
-          text: 'Book Deep Dive',
-          href: 'https://calendly.com/mayankbhasin007/new-meeting',
+          text: 'Buy Deep-Dive',
+          href: 'https://buy.stripe.com/28E28q1SiamiguFfyV2go02',
           target: '_blank',
         },
         hasRibbon: true,
         ribbonTitle: 'Popular',
+      },
+    ]}
+  />
+
+  <Pricing
+    title="Career Clarity Programme"
+    subtitle="Move from uncertainty to a clear target, stronger positioning, and a practical action plan"
+    prices={[
+      {
+        title: 'Career Clarity Power Pack',
+        subtitle: 'Structured support for your next career move',
+        price: 249,
+        period: 'one-time',
+        items: [
+          { description: '2x 60-minute 1:1 sessions' },
+          { description: 'Career and skills diagnostic' },
+          { description: 'Target-role and positioning strategy' },
+          { description: 'CV or LinkedIn profile review' },
+          { description: 'Personal 30-day action plan' },
+          { description: 'Written feedback between sessions' },
+        ],
+        callToAction: {
+          text: 'Buy Career Clarity Pack',
+          href: 'https://buy.stripe.com/aFaaEW8gG2TQemxcmJ2go03',
+          target: '_blank',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'Outcome Based',
       },
     ]}
   />
@@ -245,8 +284,8 @@ const metadata = {
           { description: 'Progress tracking' },
         ],
         callToAction: {
-          text: 'Get Started',
-          href: 'https://calendly.com/mayankbhasin007/new-meeting',
+          text: 'Start Monthly Plan',
+          href: 'https://buy.stripe.com/00w3cu54ufGCcep3Qd2go04',
           target: '_blank',
         },
       },
@@ -263,8 +302,8 @@ const metadata = {
           { description: 'Mock interview practice' },
         ],
         callToAction: {
-          text: 'Start Growing',
-          href: 'https://calendly.com/mayankbhasin007/new-meeting',
+          text: 'Start Growth Plan',
+          href: 'https://buy.stripe.com/14AdR8cwW0LIbal4Uh2go05',
           target: '_blank',
         },
         hasRibbon: true,
@@ -296,6 +335,15 @@ const metadata = {
     </Fragment>
   </Pricing>
 
+  <section class="px-4 pb-12 mx-auto max-w-4xl text-center">
+    <p class="text-sm text-muted">
+      Payments are processed securely by Stripe. Monthly plans renew automatically until cancelled. By purchasing, you
+      agree to the <a href="/terms" class="text-blue-600 hover:underline">service terms</a>
+      and acknowledge the <a href="/privacy" class="text-blue-600 hover:underline">privacy policy</a>. After payment,
+      use the booking link in your confirmation to schedule your first session.
+    </p>
+  </section>
+
   <!-- What You'll Get -->
   <Features3
     title="What My Mentees Get"
@@ -304,7 +352,8 @@ const metadata = {
     items={[
       {
         title: 'AI & Agentic AI Skills',
-        description: 'Hands-on guidance on LLMs, prompt engineering, RAG, AI agents, Copilot, and how to apply AI in product roles.',
+        description:
+          'Hands-on guidance on LLMs, prompt engineering, RAG, AI agents, Copilot, and how to apply AI in product roles.',
         icon: 'tabler:brain',
       },
       {
@@ -314,7 +363,8 @@ const metadata = {
       },
       {
         title: 'Career Pivot Strategy',
-        description: 'A clear roadmap to transition into AI or PM roles — which skills to build, certs to get, and how to position yourself.',
+        description:
+          'A clear roadmap to transition into AI or PM roles — which skills to build, certs to get, and how to position yourself.',
         icon: 'tabler:map',
       },
       {
@@ -329,7 +379,8 @@ const metadata = {
       },
       {
         title: 'Network & Visibility',
-        description: 'Guidance on building your professional brand, growing your network, and becoming visible in the AI community.',
+        description:
+          'Guidance on building your professional brand, growing your network, and becoming visible in the AI community.',
         icon: 'tabler:share',
       },
     ]}
@@ -342,95 +393,150 @@ const metadata = {
   <!-- Where I Mentor: Full Platform Ecosystem -->
   <section class="px-4 py-16 mx-auto max-w-6xl">
     <div class="text-center mb-12">
-      <p class="text-base text-secondary dark:text-blue-200 font-semibold tracking-wide uppercase mb-2">Where I Mentor</p>
+      <p class="text-base text-secondary dark:text-blue-200 font-semibold tracking-wide uppercase mb-2">
+        Where I Mentor
+      </p>
       <h2 class="text-3xl md:text-4xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-white">
         Across the Global Mentorship Ecosystem
       </h2>
       <p class="max-w-3xl mx-auto text-lg text-muted dark:text-slate-400">
-        From paid expert networks to volunteer communities — a practitioner mentor across the platforms where the global PM and AI community actually learns.
+        From paid expert networks to volunteer communities — a practitioner mentor across the platforms where the global
+        PM and AI community actually learns.
       </p>
     </div>
 
     <!-- Tier 1: Paid Mentoring Platforms -->
     <div class="mb-14">
-      <h3 class="text-sm font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-300 mb-6 text-center">Paid Mentor Across</h3>
+      <h3 class="text-sm font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-300 mb-6 text-center">
+        Paid Mentor Across
+      </h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         <!-- ADPList -->
-        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-slate-800 hover:shadow-md hover:border-blue-400 transition">
+        <div
+          class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-slate-800 hover:shadow-md hover:border-blue-400 transition"
+        >
           <div class="font-bold text-lg mb-2">ADPList</div>
-          <p class="text-sm text-muted">Global PM and AI mentor — career strategy, AI product transitions, and leadership coaching for product professionals.</p>
+          <p class="text-sm text-muted">
+            Global PM and AI mentor — career strategy, AI product transitions, and leadership coaching for product
+            professionals.
+          </p>
         </div>
         <!-- MentorCruise -->
-        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-slate-800 hover:shadow-md hover:border-blue-400 transition">
+        <div
+          class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-slate-800 hover:shadow-md hover:border-blue-400 transition"
+        >
           <div class="font-bold text-lg mb-2">MentorCruise</div>
-          <p class="text-sm text-muted">Long-form 1:1 mentorship for aspiring and mid-career PMs — career roadmaps, interview prep, and AI skills.</p>
+          <p class="text-sm text-muted">
+            Long-form 1:1 mentorship for aspiring and mid-career PMs — career roadmaps, interview prep, and AI skills.
+          </p>
         </div>
         <!-- Topmate -->
-        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-slate-800 hover:shadow-md hover:border-blue-400 transition">
+        <div
+          class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-slate-800 hover:shadow-md hover:border-blue-400 transition"
+        >
           <div class="font-bold text-lg mb-2">Topmate</div>
-          <p class="text-sm text-muted">1:1 expert calls — rapid problem-solving on PM, AI, and career pivots for the global professional community.</p>
+          <p class="text-sm text-muted">
+            1:1 expert calls — rapid problem-solving on PM, AI, and career pivots for the global professional community.
+          </p>
         </div>
         <!-- Mentro -->
-        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-slate-800 hover:shadow-md hover:border-blue-400 transition">
+        <div
+          class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-slate-800 hover:shadow-md hover:border-blue-400 transition"
+        >
           <div class="font-bold text-lg mb-2">Mentro</div>
-          <p class="text-sm text-muted">Structured tech mentorship — skills building, career navigation, and product thinking for early-career professionals.</p>
+          <p class="text-sm text-muted">
+            Structured tech mentorship — skills building, career navigation, and product thinking for early-career
+            professionals.
+          </p>
         </div>
         <!-- Femme Palette -->
-        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-slate-800 hover:shadow-md hover:border-blue-400 transition">
+        <div
+          class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-slate-800 hover:shadow-md hover:border-blue-400 transition"
+        >
           <div class="font-bold text-lg mb-2">Femme Palette</div>
-          <p class="text-sm text-muted">Mentor for women in tech — career growth, leadership development, and pivoting into AI and PM roles.</p>
+          <p class="text-sm text-muted">
+            Mentor for women in tech — career growth, leadership development, and pivoting into AI and PM roles.
+          </p>
         </div>
       </div>
     </div>
 
     <!-- Tier 2: Training & Career Partners -->
     <div class="mb-14">
-      <h3 class="text-sm font-semibold uppercase tracking-wider text-green-600 dark:text-green-300 mb-6 text-center">Training &amp; Career Partner</h3>
+      <h3 class="text-sm font-semibold uppercase tracking-wider text-green-600 dark:text-green-300 mb-6 text-center">
+        Training &amp; Career Partner
+      </h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-3xl mx-auto">
         <!-- BrainStation -->
-        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-slate-800 hover:shadow-md hover:border-green-400 transition">
+        <div
+          class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-slate-800 hover:shadow-md hover:border-green-400 transition"
+        >
           <div class="font-bold text-lg mb-2">BrainStation</div>
-          <p class="text-sm text-muted">Lead Instructor — Product Leadership. Training aspiring PMs in strategic thinking and real-world product management.</p>
+          <p class="text-sm text-muted">
+            Lead Instructor — Product Leadership. Training aspiring PMs in strategic thinking and real-world product
+            management.
+          </p>
         </div>
         <!-- IGotAnOffer -->
-        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-slate-800 hover:shadow-md hover:border-green-400 transition">
+        <div
+          class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-slate-800 hover:shadow-md hover:border-green-400 transition"
+        >
           <div class="font-bold text-lg mb-2">IGotAnOffer</div>
-          <p class="text-sm text-muted">Interview coach for PM, leadership, and AI-focused roles — preparing candidates for top-tier tech companies.</p>
+          <p class="text-sm text-muted">
+            Interview coach for PM, leadership, and AI-focused roles — preparing candidates for top-tier tech companies.
+          </p>
         </div>
       </div>
     </div>
 
     <!-- Tier 3: Volunteer Mentorship -->
     <div>
-      <h3 class="text-sm font-semibold uppercase tracking-wider text-orange-600 dark:text-orange-300 mb-6 text-center">Volunteer Mentor With</h3>
+      <h3 class="text-sm font-semibold uppercase tracking-wider text-orange-600 dark:text-orange-300 mb-6 text-center">
+        Volunteer Mentor With
+      </h3>
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
         <!-- Migrant Mentors -->
-        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-slate-800 hover:shadow-md hover:border-orange-400 transition">
+        <div
+          class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-slate-800 hover:shadow-md hover:border-orange-400 transition"
+        >
           <div class="font-bold text-lg mb-2">Migrant Mentors</div>
-          <p class="text-sm text-muted">Supporting migrant professionals in building leadership skills and accessing opportunities in UK tech.</p>
+          <p class="text-sm text-muted">
+            Supporting migrant professionals in building leadership skills and accessing opportunities in UK tech.
+          </p>
         </div>
         <!-- ITSB -->
-        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-slate-800 hover:shadow-md hover:border-orange-400 transition">
+        <div
+          class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-slate-800 hover:shadow-md hover:border-orange-400 transition"
+        >
           <div class="font-bold text-lg mb-2">ITSB</div>
-          <p class="text-sm text-muted">Mentoring at-risk young learners in digital literacy, problem-solving, and STEM career pathways.</p>
+          <p class="text-sm text-muted">
+            Mentoring at-risk young learners in digital literacy, problem-solving, and STEM career pathways.
+          </p>
         </div>
         <!-- Pi515 -->
-        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-slate-800 hover:shadow-md hover:border-orange-400 transition">
+        <div
+          class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-slate-800 hover:shadow-md hover:border-orange-400 transition"
+        >
           <div class="font-bold text-lg mb-2">Pi515</div>
-          <p class="text-sm text-muted">Volunteer mentor for refugee and underrepresented professionals entering technology and leadership careers.</p>
+          <p class="text-sm text-muted">
+            Volunteer mentor for refugee and underrepresented professionals entering technology and leadership careers.
+          </p>
         </div>
       </div>
     </div>
 
     <p class="text-center text-sm text-muted dark:text-slate-400 mt-10 max-w-2xl mx-auto italic">
-      Direct profile links and mentor badges from each platform are being added here — check back shortly, or use the discovery call CTA below to book directly.
+      Direct profile links and mentor badges from each platform are being added here — check back shortly, or use the
+      discovery call CTA below to book directly.
     </p>
   </section>
 
   <!-- What Mentees Say — Real Reviews -->
   <section id="reviews" class="px-4 py-16 mx-auto max-w-6xl">
     <div class="text-center mb-10">
-      <p class="text-base text-secondary dark:text-blue-200 font-semibold tracking-wide uppercase mb-2">What Mentees Say</p>
+      <p class="text-base text-secondary dark:text-blue-200 font-semibold tracking-wide uppercase mb-2">
+        What Mentees Say
+      </p>
       <h2 class="text-3xl md:text-4xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-white">
         In Their Own Words
       </h2>
@@ -442,7 +548,11 @@ const metadata = {
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <!-- 1. Zoryan UK -->
       <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-slate-800 shadow-sm">
-        <p class="italic text-base mb-4 leading-relaxed">"Working with Mayank was an outstanding experience! His amazing communication and deep subject knowledge provided me with invaluable insights into the tech and AI sectors. I highly recommend him to anyone seeking genuine career clarity."</p>
+        <p class="italic text-base mb-4 leading-relaxed">
+          "Working with Mayank was an outstanding experience! His amazing communication and deep subject knowledge
+          provided me with invaluable insights into the tech and AI sectors. I highly recommend him to anyone seeking
+          genuine career clarity."
+        </p>
         <div class="flex items-center gap-3">
           <div class="text-2xl">🇬🇧</div>
           <div>
@@ -454,7 +564,13 @@ const metadata = {
 
       <!-- 2. Lilian Ejila Nigeria -->
       <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-slate-800 shadow-sm">
-        <p class="italic text-base mb-4 leading-relaxed">"I had a really valuable session with Mayank that made PM interviews feel much clearer and more structured, especially across product sense, agile execution, and fintech areas like compliance and security. He explained things in a very practical way, especially around product case questions, prioritisation, and making trade-offs under real constraints. I left the session feeling more confident and would definitely recommend speaking with him."</p>
+        <p class="italic text-base mb-4 leading-relaxed">
+          "I had a really valuable session with Mayank that made PM interviews feel much clearer and more structured,
+          especially across product sense, agile execution, and fintech areas like compliance and security. He explained
+          things in a very practical way, especially around product case questions, prioritisation, and making
+          trade-offs under real constraints. I left the session feeling more confident and would definitely recommend
+          speaking with him."
+        </p>
         <div class="flex items-center gap-3">
           <div class="text-2xl">🇳🇬</div>
           <div>
@@ -466,7 +582,10 @@ const metadata = {
 
       <!-- 3. Sissy Arenas USA -->
       <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-slate-800 shadow-sm">
-        <p class="italic text-base mb-4 leading-relaxed">"Very helpful advice on PM process and what I could transition to focusing on (I come from a product design background)."</p>
+        <p class="italic text-base mb-4 leading-relaxed">
+          "Very helpful advice on PM process and what I could transition to focusing on (I come from a product design
+          background)."
+        </p>
         <div class="flex items-center gap-3">
           <div class="text-2xl">🇺🇸</div>
           <div>
@@ -478,7 +597,12 @@ const metadata = {
 
       <!-- 4. Lucas Daneluz UK -->
       <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-slate-800 shadow-sm">
-        <p class="italic text-base mb-4 leading-relaxed">"I had a great session with Mayank, who truly excels in communication, motivation, subject knowledge, and problem-solving. He shared his journey with clarity and inspired me with invaluable tips that will certainly contribute to my professional growth. The conversation was enjoyable and insightful. I highly recommend booking a session with Mayank."</p>
+        <p class="italic text-base mb-4 leading-relaxed">
+          "I had a great session with Mayank, who truly excels in communication, motivation, subject knowledge, and
+          problem-solving. He shared his journey with clarity and inspired me with invaluable tips that will certainly
+          contribute to my professional growth. The conversation was enjoyable and insightful. I highly recommend
+          booking a session with Mayank."
+        </p>
         <div class="flex items-center gap-3">
           <div class="text-2xl">🇬🇧</div>
           <div>
@@ -490,7 +614,10 @@ const metadata = {
 
       <!-- 5. Juhi USA LG Ads -->
       <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-slate-800 shadow-sm">
-        <p class="italic text-base mb-4 leading-relaxed">"Mayank shared actionable insights about how to navigate the product journey, especially in the time of AI. Will definitely want to chat with Mayank again."</p>
+        <p class="italic text-base mb-4 leading-relaxed">
+          "Mayank shared actionable insights about how to navigate the product journey, especially in the time of AI.
+          Will definitely want to chat with Mayank again."
+        </p>
         <div class="flex items-center gap-3">
           <div class="text-2xl">🇺🇸</div>
           <div>
@@ -502,7 +629,10 @@ const metadata = {
 
       <!-- 6. Jenny Yang Taiwan -->
       <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-slate-800 shadow-sm">
-        <p class="italic text-base mb-4 leading-relaxed">"I had an amazing session with Mayank! He gave me many practical advices. Thank you so much, it is really helpful!"</p>
+        <p class="italic text-base mb-4 leading-relaxed">
+          "I had an amazing session with Mayank! He gave me many practical advices. Thank you so much, it is really
+          helpful!"
+        </p>
         <div class="flex items-center gap-3">
           <div class="text-2xl">🇹🇼</div>
           <div>
@@ -514,7 +644,10 @@ const metadata = {
 
       <!-- 7. Eva Novotna Czech Republic -->
       <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-slate-800 shadow-sm">
-        <p class="italic text-base mb-4 leading-relaxed">"Mayank was extremely nice and took time to walk me through a mock interview. He was very kind and encouraging. I appreciate him a lot!"</p>
+        <p class="italic text-base mb-4 leading-relaxed">
+          "Mayank was extremely nice and took time to walk me through a mock interview. He was very kind and
+          encouraging. I appreciate him a lot!"
+        </p>
         <div class="flex items-center gap-3">
           <div class="text-2xl">🇨🇿</div>
           <div>
@@ -526,7 +659,12 @@ const metadata = {
 
       <!-- 8. Lillian Obeta Nigeria -->
       <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-slate-800 shadow-sm">
-        <p class="italic text-base mb-4 leading-relaxed">"I had an insightful session with Mayank, who provided exceptional guidance on honing my skills as a PM. His amazing communication and subject knowledge, combined with his motivating approach, truly helped clarify my focus areas. His problem-solving skills were evident as he offered actionable advice tailored to my growth. I highly recommend."</p>
+        <p class="italic text-base mb-4 leading-relaxed">
+          "I had an insightful session with Mayank, who provided exceptional guidance on honing my skills as a PM. His
+          amazing communication and subject knowledge, combined with his motivating approach, truly helped clarify my
+          focus areas. His problem-solving skills were evident as he offered actionable advice tailored to my growth. I
+          highly recommend."
+        </p>
         <div class="flex items-center gap-3">
           <div class="text-2xl">🇳🇬</div>
           <div>
@@ -538,7 +676,12 @@ const metadata = {
 
       <!-- 9. Stella Lo UK -->
       <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-slate-800 shadow-sm">
-        <p class="italic text-base mb-4 leading-relaxed">"Mayank shared really insightful perspectives about the evolving landscape of Product Management, helping me understand the key skills that are important to lean more on — such as systems thinking, being a 'product builder' and stakeholder management. We also touched on Product Sense interview watchouts, which is very practical. Thanks Mayank!"</p>
+        <p class="italic text-base mb-4 leading-relaxed">
+          "Mayank shared really insightful perspectives about the evolving landscape of Product Management, helping me
+          understand the key skills that are important to lean more on — such as systems thinking, being a 'product
+          builder' and stakeholder management. We also touched on Product Sense interview watchouts, which is very
+          practical. Thanks Mayank!"
+        </p>
         <div class="flex items-center gap-3">
           <div class="text-2xl">🇬🇧</div>
           <div>
@@ -550,7 +693,10 @@ const metadata = {
 
       <!-- 10. Olga Shulyak USA -->
       <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-slate-800 shadow-sm">
-        <p class="italic text-base mb-4 leading-relaxed">"Really enjoyed my session with Mayank. In just 30 minutes, he shared so much valuable insight on my job search and career development. He's structured, knowledgeable, and a truly great mentor."</p>
+        <p class="italic text-base mb-4 leading-relaxed">
+          "Really enjoyed my session with Mayank. In just 30 minutes, he shared so much valuable insight on my job
+          search and career development. He's structured, knowledgeable, and a truly great mentor."
+        </p>
         <div class="flex items-center gap-3">
           <div class="text-2xl">🇺🇸</div>
           <div>
@@ -562,7 +708,11 @@ const metadata = {
 
       <!-- 11. Leia Yun USA NYU -->
       <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-slate-800 shadow-sm">
-        <p class="italic text-base mb-4 leading-relaxed">"Such a great session with Mayank! He gave really thoughtful answers to all of my questions and shared a lot of valuable insights from his experience. He was also very approachable and genuinely willing to help, which made the conversation even more meaningful. I'd be happy to chat again in the future!"</p>
+        <p class="italic text-base mb-4 leading-relaxed">
+          "Such a great session with Mayank! He gave really thoughtful answers to all of my questions and shared a lot
+          of valuable insights from his experience. He was also very approachable and genuinely willing to help, which
+          made the conversation even more meaningful. I'd be happy to chat again in the future!"
+        </p>
         <div class="flex items-center gap-3">
           <div class="text-2xl">🇺🇸</div>
           <div>
@@ -574,7 +724,10 @@ const metadata = {
 
       <!-- 12. Amante Ngwenya South Africa -->
       <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-slate-800 shadow-sm">
-        <p class="italic text-base mb-4 leading-relaxed">"Mayank is extremely helpful. I was able to figure out exactly how to move forward with my goals in one meeting. Highly recommend."</p>
+        <p class="italic text-base mb-4 leading-relaxed">
+          "Mayank is extremely helpful. I was able to figure out exactly how to move forward with my goals in one
+          meeting. Highly recommend."
+        </p>
         <div class="flex items-center gap-3">
           <div class="text-2xl">🇿🇦</div>
           <div>
@@ -586,7 +739,10 @@ const metadata = {
 
       <!-- 13. Unwanaobong Williams Nigeria -->
       <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-slate-800 shadow-sm">
-        <p class="italic text-base mb-4 leading-relaxed">"Mayank took out time to listen attentively and was eager to help. He was exhaustive on the tips offered. I look forward to another session."</p>
+        <p class="italic text-base mb-4 leading-relaxed">
+          "Mayank took out time to listen attentively and was eager to help. He was exhaustive on the tips offered. I
+          look forward to another session."
+        </p>
         <div class="flex items-center gap-3">
           <div class="text-2xl">🇳🇬</div>
           <div>
@@ -598,19 +754,32 @@ const metadata = {
 
       <!-- 14. Shallu India -->
       <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-slate-800 shadow-sm">
-        <p class="italic text-base mb-4 leading-relaxed">"I had an exceptional session with my mentor. Their amazing communication and subject knowledge provided me with clarity on my career doubts. I felt incredibly motivated throughout our discussion, and their problem-solving skills were invaluable. I highly recommend booking a session with this mentor if you're seeking outstanding guidance."</p>
+        <p class="italic text-base mb-4 leading-relaxed">
+          "I had an exceptional session with my mentor. Their amazing communication and subject knowledge provided me
+          with clarity on my career doubts. I felt incredibly motivated throughout our discussion, and their
+          problem-solving skills were invaluable. I highly recommend booking a session with this mentor if you're
+          seeking outstanding guidance."
+        </p>
         <div class="flex items-center gap-3">
           <div class="text-2xl">🇮🇳</div>
           <div>
             <div class="font-semibold">Shallu</div>
-            <div class="text-sm text-muted">Aspiring Product Manager / Consumer Behavioural Specialist, Christ University</div>
+            <div class="text-sm text-muted">
+              Aspiring Product Manager / Consumer Behavioural Specialist, Christ University
+            </div>
           </div>
         </div>
       </div>
 
       <!-- 15. Khushboo Kanwar Rajawat India -->
       <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-slate-800 shadow-sm">
-        <p class="italic text-base mb-4 leading-relaxed">"I had an incredibly enriching session with him. What stood out immediately was the depth and clarity of his thinking — clearly shaped by years of experience across diverse environments and challenges. He brings a nuanced, well-rounded perspective that goes beyond surface-level advice and encourages deeper reflection. His approach is both thoughtful and empathetic. He created a space that felt open and constructive, which made it easy to engage honestly."</p>
+        <p class="italic text-base mb-4 leading-relaxed">
+          "I had an incredibly enriching session with him. What stood out immediately was the depth and clarity of his
+          thinking — clearly shaped by years of experience across diverse environments and challenges. He brings a
+          nuanced, well-rounded perspective that goes beyond surface-level advice and encourages deeper reflection. His
+          approach is both thoughtful and empathetic. He created a space that felt open and constructive, which made it
+          easy to engage honestly."
+        </p>
         <div class="flex items-center gap-3">
           <div class="text-2xl">🇮🇳</div>
           <div>
@@ -622,7 +791,9 @@ const metadata = {
 
       <!-- 16. Geoffrey Granka Canada -->
       <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-slate-800 shadow-sm">
-        <p class="italic text-base mb-4 leading-relaxed">"I appreciated how prepared and thoughtful Mayank was, and how intently he listened to my questions."</p>
+        <p class="italic text-base mb-4 leading-relaxed">
+          "I appreciated how prepared and thoughtful Mayank was, and how intently he listened to my questions."
+        </p>
         <div class="flex items-center gap-3">
           <div class="text-2xl">🇨🇦</div>
           <div>
@@ -634,7 +805,12 @@ const metadata = {
 
       <!-- 17. Nikita Kabra USA Walmart -->
       <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-slate-800 shadow-sm">
-        <p class="italic text-base mb-4 leading-relaxed">"Really appreciated my conversation with Mayank — he offered practical, actionable advice on growing within a large organization. He was genuinely invested in understanding my situation and shared thoughtful, constructive perspectives tailored to my challenges. He's also incredibly knowledgeable, with a broad range of product experience that made his feedback especially insightful."</p>
+        <p class="italic text-base mb-4 leading-relaxed">
+          "Really appreciated my conversation with Mayank — he offered practical, actionable advice on growing within a
+          large organization. He was genuinely invested in understanding my situation and shared thoughtful,
+          constructive perspectives tailored to my challenges. He's also incredibly knowledgeable, with a broad range of
+          product experience that made his feedback especially insightful."
+        </p>
         <div class="flex items-center gap-3">
           <div class="text-2xl">🇺🇸</div>
           <div>
@@ -646,7 +822,11 @@ const metadata = {
 
       <!-- 18. Ksenia M. France Danone -->
       <div class="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-slate-800 shadow-sm">
-        <p class="italic text-base mb-4 leading-relaxed">"What I have particularly appreciated during my session with Mayank is the structured answers driven by understanding of my background and motivations. In only 30 minutes I got clear recommendations and suggestion on the next steps, plus confirmed my understanding of the PM role and core skills."</p>
+        <p class="italic text-base mb-4 leading-relaxed">
+          "What I have particularly appreciated during my session with Mayank is the structured answers driven by
+          understanding of my background and motivations. In only 30 minutes I got clear recommendations and suggestion
+          on the next steps, plus confirmed my understanding of the PM role and core skills."
+        </p>
         <div class="flex items-center gap-3">
           <div class="text-2xl">🇫🇷</div>
           <div>
@@ -670,12 +850,11 @@ const metadata = {
       },
     ]}
   >
-    <Fragment slot="title">
-      Ready to Accelerate Your Career?
-    </Fragment>
+    <Fragment slot="title"> Ready to Accelerate Your Career? </Fragment>
 
     <Fragment slot="subtitle">
-      Start with a free 15-minute discovery call. No sales pitch — just an honest conversation about your goals and how I can help.
+      Start with a free 15-minute discovery call. No sales pitch — just an honest conversation about your goals and how
+      I can help.
     </Fragment>
   </CallToAction>
 </Layout>

@@ -1,0 +1,56 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Payment received — Clarity AI',
+  description: 'Next steps after purchasing a Clarity AI mentoring session or programme.',
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    tagline="Payment received"
+    title="Thank you — your Clarity AI purchase is confirmed."
+    subtitle="Stripe will email your receipt. Use the button below to schedule your first session, using the same email address you entered at checkout."
+  />
+
+  <section class="px-4 pb-16 mx-auto max-w-3xl">
+    <div class="rounded-xl border border-gray-200 bg-white p-8 shadow-sm dark:border-gray-700 dark:bg-slate-900">
+      <h2 class="text-2xl font-bold mb-5">What happens next</h2>
+      <ol class="space-y-4 list-decimal pl-5">
+        <li>Check your inbox for the Stripe payment receipt.</li>
+        <li>Book your first session using the scheduling link below.</li>
+        <li>Add your goals and relevant context to the booking form.</li>
+        <li>For a multi-session package, we will agree the remaining schedule during the first call.</li>
+      </ol>
+      <p class="mt-6 text-sm text-muted">
+        If you purchased a monthly plan, it will renew automatically until cancelled. See the
+        <a href="/terms" class="text-blue-600 hover:underline">service terms</a> for scheduling, cancellation, and refund
+        information.
+      </p>
+    </div>
+  </section>
+
+  <CallToAction
+    title="Schedule your first session"
+    subtitle="Choose a suitable time and include the email address used for payment."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Book Your Session',
+        href: 'https://calendly.com/mayankbhasin007/new-meeting',
+        target: '_blank',
+      },
+      {
+        text: 'Contact Clarity AI',
+        href: '/contact',
+      },
+    ]}
+  />
+</Layout>
